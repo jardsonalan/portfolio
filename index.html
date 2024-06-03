@@ -7,7 +7,55 @@
     <title>Portfólio - Jardson Alan</title>
 </head>
 <body>
-    
+    <header>
+        <nav class="nav-bar">
+            <div class="logo">
+                <h1>Logo</h1>
+            </div>
+
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="#" class="nav-link">Início</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Sobre</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Skills</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Projetos</a></li>
+                </ul>
+
+                <div class="cv-button">
+                    <button>
+                        <a href="#">CV - Download</a>
+                    </button>
+                </div>
+
+                <!-- Criar function setColor() -->
+
+                <div class="color-button">
+                    <button onclick="setColor()">
+                        <i class="fi fi-sr-moon"></i>
+                    </button>
+                </div>
+
+            </div>
+
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><i class="fi fi-sr-menu-burger"></i></button>
+            </div>
+            
+        </nav>
+
+        <div class="menu-mobile">
+            <ul>
+                <li class="nav-item"><a href="#" class="nav-link">Início</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Sobre</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Skills</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Projetos</a></li>
+            </ul>
+
+            <div class="cv-button">
+                <button><a href="#">CV - Download</a></button>
+            </div>
+        </div>
+    </header>
     <script src="assets/js/script.js"></script>
 </body>
 </html>
