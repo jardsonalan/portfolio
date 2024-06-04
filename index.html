@@ -6,13 +6,18 @@
     <link rel="stylesheet" href="assets/style/style.css">
     <title>Portfólio - Jardson Alan</title>
 </head>
+<!-- Light theme no body e no header -->
 <body class="light-theme">
     <header class="light-theme">
+        <!-- Navbar com a logo e a lista de opções do site -->
         <nav class="nav-bar">
+            <!-- Logo -->
             <div class="logo">
-                <h1>Logo</h1>
+                <img class="logo-img" src="assets/img/logos/logo-light-mode.png" alt="logo">
+                <hr>
+                <h1>Portfólio</h1>
             </div>
-
+            <!-- Lista de opções -->
             <div class="nav-list">
                 <ul>
                     <li class="nav-item"><a href="#" class="nav-link">Início</a></li>
@@ -20,43 +25,43 @@
                     <li class="nav-item"><a href="#" class="nav-link">Skills</a></li>
                     <li class="nav-item"><a href="#" class="nav-link">Projetos</a></li>
                 </ul>
-
+                <!-- Opção de download do currículo -->
                 <div class="cv-button">
                     <button>
                         <a href="#">CV - Download</a>
                     </button>
                 </div>
-
-                <!-- Criar function setColor() -->
-
+                <!-- Botão de trocar tema da página -->
                 <div class="color-button">
                     <button onclick="setColorPage()">
-                        <i class="fi fi-sr-eclipse"></i>
+                        <img class="mode-theme" src="assets/img/light-dark-theme/moon.png" alt="theme">
                     </button>
                 </div>
 
-            </div>
-
-            <div class="mobile-menu-icon">
-                <button onclick="menuShow()"><img class="icon" src="assets/img/icons/menu-burger.png" alt="icon"></button>
+                <!-- Ícone que irá aparecer no mobile para as opções -->
+                <div class="mobile-menu-icon">
+                    <button onclick="menuShow()"><img class="icon" src="assets/img/icons-menu/menu-burger.png" alt="icon"></button>
+                </div>
             </div>
             
         </nav>
-
+        <!-- Navbar mobile que irá aparecer dentro do ícone de opções -->
         <div class="menu-mobile">
+            <!-- Lista de opções do site na versão mobile -->
             <ul>
                 <li class="nav-item"><a href="#" class="nav-link">Início</a></li>
                 <li class="nav-item"><a href="#" class="nav-link">Sobre</a></li>
                 <li class="nav-item"><a href="#" class="nav-link">Skills</a></li>
                 <li class="nav-item"><a href="#" class="nav-link">Projetos</a></li>
             </ul>
-
+            <!-- Botão de download do currículo na versão mobile -->
             <div class="cv-button">
                 <button><a href="#">CV - Download</a></button>
             </div>
         </div>
     </header>
-    
+
+    <!-- Chamada do JavaScript -->
     <script src="assets/js/script.js"></script>
 </body>
 </html>

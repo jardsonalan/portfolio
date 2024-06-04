@@ -1,9 +1,6 @@
 /* Importação: Fonte Poppins */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
 
-/* Importação: Icon Menu Burger */
-@import url('https://cdn-uicons.flaticon.com/2.4.0/uicons-solid-rounded/css/uicons-solid-rounded.css');
-
 :root {
     --whiteHeaderBar: #f8f7f3;
     --blackShadowBar: rgba(55, 54, 54, 0.549);
@@ -49,6 +46,19 @@ header {
 .logo {
     display: flex;
     align-items: center;
+    gap: .8rem;
+}
+
+.logo img {
+    width: 55px;
+}
+
+hr {
+    height: 30px;
+    width: 3px;
+    border-radius: 15px;
+    border: none;
+    background-color: var(--fontColor);
 }
 
 .nav-list {
@@ -117,9 +127,10 @@ header {
     transform: scale(0.9);
 }
 
-.color-button button i {
+.color-button button img {
     display: flex;
     align-items: center;
+    width: 25px;
 }
 
 .mobile-menu-icon {
@@ -163,7 +174,6 @@ header {
         display: flex;
         align-items: center;
         width: 25px;
-        filter: opacity(0.6) drop-shadow(0 0 0 var(--fontColor));
     }
 
     .menu-mobile ul {
