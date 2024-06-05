@@ -1,6 +1,12 @@
 /* Importação: Fonte Poppins */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+/* Importação: Icons de Social Media */
+@import url('https://cdn-uicons.flaticon.com/2.4.0/uicons-brands/css/uicons-brands.css');
+
+/* Importação: Icons sólidos usuais */
+@import url('https://cdn-uicons.flaticon.com/2.4.0/uicons-solid-rounded/css/uicons-solid-rounded.css');
+
 :root {
     --whiteHeaderBar: #f8f7f3;
     --blackShadowBar: rgba(55, 54, 54, 0.549);
@@ -15,6 +21,21 @@
     font-family: 'Poppins', sans-serif;
     background-color: var(--bgColor);
     color: var(--fontColor);
+}
+
+body::-webkit-scrollbar {
+    width: 8px;
+}
+
+body::-webkit-scrollbar-track {
+    background: var(--fontColor);
+    border-radius: 20px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--bottomHeaderColor);
+    border-radius: 20px;
+    border: none;
 }
 
 .light-theme {
@@ -90,27 +111,20 @@ header {
     color: var(--bottomHeaderColor);
 }
 
-.cv-button button {
+.cv-button a {
     border: none;
     background-color: var(--bgBottomColorHeader);
     padding: 10px 15px;
     border-radius: 5px;
     cursor: pointer;
-}
-
-.cv-button button:hover {
-    background-color: var(--bgButtonHover);
-}
-
-.cv-button button:hover a{
-    color: var(--bottomHeaderColor);
-}
-
-.cv-button button a {
     text-decoration: none;
     font-weight: 500;
     font-size: 1.1rem;
-    background-color: transparent;
+}
+
+.cv-button a:hover {
+    background-color: var(--bgButtonHover);
+    color: var(--bottomHeaderColor);
 }
 
 .color-button {
@@ -150,24 +164,89 @@ header {
     align-items: center;
 }
 
+.home-light {
+    background: url('/assets/img/backgrounds/background-light.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.home-dark {
+    background: url('/assets/img/backgrounds/background-dark.png');
+    background-size: cover;
+    background-position: center;
+}
+
 .home .home-slide {
     display: flex;
     flex-direction: column;
     gap: .2rem;
     margin-left: 3rem;
+    background-color: transparent;
 }
 
 .home .home-slide .name {
     font-size: 5rem;
     font-weight: 700;
+    background-color: transparent;
 }
 
 .home .home-slide .dev-stack {
     font-size: 2.5rem;
     font-weight: 700;
+    background-color: transparent;
+}
+
+.home .home-slide .dev-stack span {
+    background-color: transparent;
 }
 
 .home .home-slide .dev-stack .stack {
+    color: var(--bottomHeaderColor);
+}
+
+.home .home-slide .link-projects {
+    display: flex;
+    gap: 1.5rem;
+    background-color: transparent;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 1.5rem;
+}
+
+.home .home-slide .link-projects .play-botton {
+    background-color: var(--bottomHeaderColor);
+    display: flex;
+    width: 50px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 50%;
+    text-decoration: none;
+}
+
+.home .home-slide .link-projects .play-botton:hover {
+    transform: scale(0.9);
+    transition: .3s;
+}
+
+.home .home-slide .link-projects .play-botton i {
+    display: flex;
+    background-color: transparent;
+    color: var(--fontColor);
+}
+
+.home .home-slide .link-projects .my-projects {
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    gap: .3rem;
+    color: var(--fontColor);
+    text-decoration: none;
+}
+
+.home .home-slide .link-projects .my-projects span {
+    background-color: transparent;
     color: var(--bottomHeaderColor);
 }
 
@@ -176,9 +255,10 @@ header {
     gap: 1rem;
     font-weight: 500;
     font-size: 1.2rem;
+    background-color: transparent;
 }
 
-.home .home-text .one {
+.home .home-slide .home-text .one {
     background-color: var(--bottomHeaderColor);
     width: 80px;
     height: 30px;
@@ -190,9 +270,95 @@ header {
     color: var(--bgColor);
 }
 
-.home .home-text .two {
+.home .home-slide .home-text .two {
     display: flex;
     align-items: center;
+    background-color: transparent;
+}
+
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 90vh;
+    gap: 5rem;
+}
+
+.about .about-img {
+    display: flex;
+    justify-content: center;
+}
+
+.about .about-img img {
+    width: 300px;
+}
+
+.about .about-box {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.about .about-box .about-me {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.about .about-box .about-me .about-two {
+    color: var(--bottomHeaderColor);
+}
+
+.about .about-box .about-list {
+    font-size: 1.2rem;
+}
+
+.about .about-box .about-list ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-left: 1.5rem;
+}
+
+.about .about-box .about-list ul li::marker {
+    color: var(--bottomHeaderColor);
+}
+
+.about .about-box .about-links {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+}
+
+.about .about-box .about-links ul {
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+    list-style: none;
+}
+
+.about .about-box .about-links ul .social-media a {
+    text-decoration: none;
+    background-color: var(--bottomHeaderColor);
+    display: flex;
+    width: 50px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 50%;
+}
+
+.about .about-box .about-links ul .social-media a:hover {
+    background-color: var(--bgButtonHover);
+}
+
+.about .about-box .about-links ul .social-media a i {
+    display: flex;
+    background-color: transparent;
+}
+
+.about .about-box .about-links ul .social-media a:hover i {
+    color: var(--bottomHeaderColor);
 }
 
 @media (width <= 768px) {
@@ -255,11 +421,12 @@ header {
     }
 
     .menu-mobile .cv-button {
-        display: block;
+        display: flex;
         padding: 1rem 2rem;
+        text-align: center;
     }
 
-    .menu-mobile .cv-button button {
+    .menu-mobile .cv-button a {
         width: 100%;
     }
 
@@ -293,5 +460,41 @@ header {
     .home .home-slide .dev-stack {
         font-size: 1.2rem;
         font-weight: 700;
+    }
+
+    .about .about-img {
+        display: none;
+    }
+
+    .about .about-box {
+        width: 100%;
+        align-items: center;
+    }
+
+    .about .about-box .about-me {
+        font-size: 2rem;
+    }
+
+    .about .about-box .about-list {
+        font-size: 0.8rem;
+        margin: 0.8rem;
+    }
+
+    .about .about-box .about-list ul{
+        margin-left: 0.5rem;
+    }
+
+    .about .about-box .about-links {
+        font-size: 1.2rem;
+        margin-top: 1rem;
+    }
+
+    .about .about-box .about-links ul {
+        gap: 1.5rem;
+    }
+
+    .about .about-box .about-links ul .social-media a {
+        width: 40px;
+        height: 40px;
     }
 }

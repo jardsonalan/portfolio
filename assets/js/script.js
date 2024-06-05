@@ -29,6 +29,7 @@ function setColorPage() {
     let iconModeColor = document.querySelector('.icon');
     let iconModeTheme = document.querySelector('.mode-theme');
     let menuMobile = document.querySelector('.menu-mobile');
+    let imageHome = document.querySelector('.home-light');
 
     if (buttonModeColor.classList.contains('dark-theme') == true) {
         buttonModeColor.classList.remove('dark-theme');
@@ -36,6 +37,7 @@ function setColorPage() {
         headerBar.classList.remove('dark-theme');
         logoMode.src = 'assets/img/logos/logo-light-mode.png';
         iconModeTheme.src = 'assets/img/light-dark-theme/moon.png';
+        imageHome.classList.remove('home-dark');
 
         if (menuMobile.classList.contains('open-menu') == true) {
             iconModeColor.src = 'assets/img/icons-menu/cross.png';
@@ -49,6 +51,7 @@ function setColorPage() {
         logoMode.src = 'assets/img/logos/logo-dark-mode.png';
         iconModeColor.src = 'assets/img/icons-menu/menu-burger-dark-mode.png';
         iconModeTheme.src = 'assets/img/light-dark-theme/brightness.png';
+        imageHome.classList.add('home-dark');
 
         if (menuMobile.classList.contains('open-menu') == true) {
             iconModeColor.src = 'assets/img/icons-menu/cross-dark-mode.png';
