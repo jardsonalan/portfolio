@@ -165,13 +165,13 @@ header {
 }
 
 .home-light {
-    background: url('/assets/img/backgrounds/background-light.jpg');
+    background: url('img/backgrounds/background-light.jpg');
     background-size: cover;
     background-position: center;
 }
 
 .home-dark {
-    background: url('/assets/img/backgrounds/background-dark.png');
+    background: url('img/backgrounds/background-dark.png');
     background-size: cover;
     background-position: center;
 }
