@@ -361,6 +361,154 @@ header {
     color: var(--bottomHeaderColor);
 }
 
+@media (width <= 576px) {
+    .logo h1 {
+        font-size: 1.2rem;
+    }
+
+    .logo img {
+        width: 35px;
+    }
+
+    .logo hr {
+        height: 25px;
+    }
+
+    .nav-bar {
+        padding: 1.5rem;
+    }
+
+    .nav-item {
+        display: none;
+    }
+
+    .cv-button {
+        display: none;
+    }
+
+    .mobile-menu-icon {
+        display: block;
+    }
+
+    .mobile-menu-icon button {
+        border: none;
+        background-color: transparent;
+        border-radius: 50%;
+        cursor: pointer;
+        padding: 0.5rem;
+    }
+
+    .mobile-menu-icon button:active {
+        transform: scale(0.9);
+    }
+    
+    .mobile-menu-icon button img {
+        display: flex;
+        align-items: center;
+        width: 25px;
+    }
+
+    .menu-mobile ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+
+    .menu-mobile .nav-item {
+        display: block;
+        padding-top: 1.2rem;
+    }
+
+    .menu-mobile .cv-button {
+        display: flex;
+        padding: 1rem 2rem;
+        text-align: center;
+    }
+
+    .menu-mobile .cv-button a {
+        width: 100%;
+    }
+
+    .open-menu {
+        display: block;
+    }
+
+    .home {
+        justify-content: center;
+    }
+
+    .home .home-slide {
+        margin-left: 0;
+        align-items: center;
+    }
+
+    .home .home-slide .home-text {
+        font-size: 0.8rem;
+    }
+
+    .home .home-text .one {
+        width: 60px;
+        height: 25px;
+    }
+
+    .home .home-slide .name {
+        font-size: 2.5rem;
+        font-weight: 700;
+    }
+
+    .home .home-slide .dev-stack {
+        font-size: 1.2rem;
+        font-weight: 700;
+    }
+
+    .home .home-slide .link-projects .play-botton {
+        width: 35px;
+        height: 35px;
+    }
+
+    .home .home-slide .link-projects {
+        gap: 0.8rem;
+        font-size: 0.9rem;
+    }
+
+    .about .about-img {
+        display: none;
+    }
+
+    .about .about-box {
+        width: 100%;
+        align-items: center;
+    }
+
+    .about .about-box .about-me {
+        font-size: 2rem;
+    }
+
+    .about .about-box .about-list {
+        font-size: 0.8rem;
+        margin: 0.8rem;
+    }
+
+    .about .about-box .about-list ul{
+        margin-left: 0.5rem;
+    }
+
+    .about .about-box .about-links {
+        font-size: 1.2rem;
+        margin-top: 1rem;
+    }
+
+    .about .about-box .about-links ul {
+        gap: 1.5rem;
+    }
+
+    .about .about-box .about-links ul .social-media a {
+        width: 40px;
+        height: 40px;
+    }
+}
+
 @media (width <= 768px) {
     .logo h1 {
         font-size: 1.2rem;
