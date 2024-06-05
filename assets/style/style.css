@@ -462,6 +462,16 @@ header {
         font-weight: 700;
     }
 
+    .home .home-slide .link-projects .play-botton {
+        width: 35px;
+        height: 35px;
+    }
+
+    .home .home-slide .link-projects {
+        gap: 0.8rem;
+        font-size: 0.9rem;
+    }
+
     .about .about-img {
         display: none;
     }
