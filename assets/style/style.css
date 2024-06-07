@@ -240,7 +240,7 @@ header {
     background-color: transparent;
     display: flex;
     align-items: center;
-    gap: .3rem;
+    gap: 5px;
     color: var(--fontColor);
     text-decoration: none;
 }
