@@ -13,6 +13,8 @@
     --whiteShadowBar: rgba(122, 122, 122, 0.549);
     --textHeaderColor: #373636;
     --bottomHeaderColor: #15aaff;
+    --bgSkillsLight: rgba(55, 54, 54, 0.100);
+    --bgSkillsDark: rgba(248, 247, 243, 0.100);
 }
 
 * {
@@ -44,6 +46,7 @@ body::-webkit-scrollbar-thumb {
     --bgBottomColorHeader: var(--bottomHeaderColor);
     --bgButtonHover: var(--textHeaderColor);
     --shadowBar: var(--blackShadowBar);
+    --bgSkills: var(--bgSkillsLight);
 }
 
 .dark-theme {
@@ -52,12 +55,14 @@ body::-webkit-scrollbar-thumb {
     --bgBottomColorHeader: var(--bottomHeaderColor);
     --bgButtonHover: var(--whiteHeaderBar);
     --shadowBar: var(--whiteShadowBar);
+    --bgSkills: var(--bgSkillsDark);
 }
 
 header {
     box-shadow: 0 3px 10px var(--shadowBar);
     position: fixed;
     width: 100%;
+    z-index: 1;
 }
 
 .nav-bar {
@@ -206,7 +211,7 @@ header {
 
 .home .home-slide .link-projects {
     display: flex;
-    gap: 1.5rem;
+    gap: 20px;
     background-color: transparent;
     font-size: 1.5rem;
     font-weight: 600;
@@ -252,7 +257,7 @@ header {
 
 .home .home-slide .home-text {
     display: flex;
-    gap: 1rem;
+    gap: 15px;
     font-weight: 500;
     font-size: 1.2rem;
     background-color: transparent;
@@ -358,6 +363,69 @@ header {
 }
 
 .about .about-box .about-links ul .social-media a:hover i {
+    color: var(--bottomHeaderColor);
+}
+
+.skills {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills .skills-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+}
+
+.skills .skills-box .skills-title {
+    display: flex;
+    gap: 10px;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.skills .skills-box .skills-title .skills-two {
+    color: var(--bottomHeaderColor);
+}
+
+.skills .skills-box .list-skills {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+    gap: 20px;
+    width: 90%;
+}
+
+.skills .skills-box .list-skills .my-skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--bgSkills);
+    padding: 30px;
+    margin: 10px;
+}
+
+.skills .skills-box .list-skills .my-skills:hover {
+    transform: translateY(-5px);
+    transition: .3s;
+}
+
+.skills .skills-box .list-skills .my-skills h2,
+.skills .skills-box .list-skills .my-skills i {
+    background-color: transparent;
+}
+
+.skills .skills-box .list-skills .my-skills i {
+    font-size: 2rem;
     color: var(--bottomHeaderColor);
 }
 
@@ -467,13 +535,8 @@ header {
         height: 35px;
     }
 
-    .home .home-slide .link-projects .play-botton:hover {
-        transform: none;
-        transition: none;
-    }
-
     .home .home-slide .link-projects {
-        gap: 0.8rem;
+        gap: 10px;
         font-size: 0.9rem;
     }
 
@@ -511,6 +574,31 @@ header {
     .about .about-box .about-links ul .social-media a {
         width: 40px;
         height: 40px;
+    }
+
+    .skills .skills-box {
+        gap: 1rem;
+    }
+
+    .skills .skills-box .skills-title {
+        font-size: 2rem;
+    }
+
+    .skills .skills-box .list-skills {
+        grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+        gap: 1rem;
+        width: 90%;
+    }
+
+    .skills .skills-box .list-skills .my-skills {
+        padding: 10px;
+        gap: 5px;
+        margin: 0;
+        font-size: 0.8rem;
+    }
+
+    .skills .skills-box .list-skills .my-skills i {
+        font-size: 1.5rem;
     }
 }
 
@@ -620,13 +708,8 @@ header {
         height: 45px;
     }
 
-    .home .home-slide .link-projects .play-botton:hover {
-        transform: none;
-        transition: none;
-    }
-
     .home .home-slide .link-projects {
-        gap: 0.8rem;
+        gap: 15px;
         font-size: 1.2rem;
     }
 
@@ -664,5 +747,20 @@ header {
     .about .about-box .about-links ul .social-media a {
         width: 55px;
         height: 55px;
+    }
+
+    .skills .skills-box .skills-title {
+        font-size: 3.5rem;
+    }
+
+    .skills .skills-box .list-skills .my-skills {
+        padding: 15px;
+        gap: 5px;
+        margin: 0;
+        font-size: 1.2rem;
+    }
+
+    .skills .skills-box .list-skills .my-skills i {
+        font-size: 2.1rem;
     }
 }
