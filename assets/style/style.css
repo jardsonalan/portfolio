@@ -26,7 +26,7 @@
 }
 
 body::-webkit-scrollbar {
-    width: 8px;
+    width: 6px;
 }
 
 body::-webkit-scrollbar-track {
@@ -429,6 +429,7 @@ header {
     color: var(--bottomHeaderColor);
 }
 
+/* Responsividade: Mobile */
 @media screen and (max-width: 576px) {
     .logo h1 {
         font-size: 1.2rem;
@@ -602,7 +603,8 @@ header {
     }
 }
 
-@media screen and (min-width: 577px) and (max-width: 1024px) {
+/* Responsividade: Tablet Médio */
+@media screen and (min-width: 577px) and (max-width: 768px) {
     .logo h1 {
         font-size: 1.8rem;
     }
@@ -713,8 +715,12 @@ header {
         font-size: 1.2rem;
     }
 
-    .about .about-img {
-        display: none;
+    .about {
+        flex-direction: column;
+    }
+
+    .about .about-img img {
+       width: 180px;
     }
 
     .about .about-box {
@@ -762,5 +768,96 @@ header {
 
     .skills .skills-box .list-skills .my-skills i {
         font-size: 2.1rem;
+    }
+}
+
+/* Responsividade: Tablet Grande */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .logo h1 {
+        font-size: 1.8rem;
+    }
+
+    .logo img {
+        width: 45px;
+    }
+
+    .logo hr {
+        height: 30px;
+    }
+
+    .nav-bar {
+        padding: 1.5rem;
+    }
+
+    .nav-item {
+        display: none;
+    }
+
+    .cv-button {
+        display: none;
+    }
+
+    .mobile-menu-icon {
+        display: block;
+    }
+
+    .mobile-menu-icon button {
+        border: none;
+        background-color: transparent;
+        border-radius: 50%;
+        cursor: pointer;
+        padding: 0.5rem;
+    }
+
+    .mobile-menu-icon button:active {
+        transform: scale(0.9);
+    }
+    
+    .mobile-menu-icon button img {
+        display: flex;
+        align-items: center;
+        width: 25px;
+    }
+
+    .menu-mobile ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1.5rem;
+    }
+
+    .menu-mobile .nav-item {
+        display: block;
+        padding-top: 1.2rem;
+    }
+
+    .menu-mobile .cv-button {
+        display: flex;
+        padding: 1rem 2rem;
+        text-align: center;
+    }
+
+    .menu-mobile .cv-button a {
+        width: 100%;
+    }
+
+    .open-menu {
+        display: block;
+    }
+
+    .about {
+        gap: 3.5rem;
+    }
+
+    .about .about-img img {
+        width: 220px;
+    }
+
+    .skills .skills-box .skills-title {
+        margin-top: 2.5rem;
+    }
+
+    .skills .skills-box .list-skills {
+        gap: 10px;
     }
 }
