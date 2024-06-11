@@ -412,6 +412,7 @@ header {
     background-color: var(--bgSkills);
     padding: 30px;
     margin: 10px;
+    cursor: pointer;
 }
 
 .skills .skills-box .list-skills .my-skills:hover {
@@ -426,6 +427,83 @@ header {
 
 .skills .skills-box .list-skills .my-skills i {
     font-size: 2rem;
+    color: var(--bottomHeaderColor);
+}
+
+.projects {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.projects .projects-title {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.projects .projects-title .pjct-two {
+    color: var(--bottomHeaderColor);
+}
+
+.projects .projects-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    font-size: 1.2rem;
+    background-color: transparent;
+}
+
+.projects .projects-box .box-pjct {
+    display: flex;
+    gap: 3rem;
+    width: 70%;
+    border: none;
+    background-color: rgba(16, 16, 16, 0.062);
+    padding: 2rem;
+    border-radius: 10px;
+    align-items: center;
+}
+
+.projects .projects-box .box-pjct .img-project {
+    width: 220px;
+    height: 220px;
+    border: none;
+    border-radius: 15px;
+    background-color: transparent;
+}
+
+.projects .projects-box .box-pjct .text-project {
+    text-align: justify;
+    background-color: transparent;
+}
+
+.projects .projects-box .box-pjct .text-project p {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    background-color: transparent;
+}
+
+.projects .projects-box .box-pjct .text-project h2 {
+    background-color: transparent;
+}
+
+.projects .projects-box .box-pjct .text-project a {
+    background-color: var(--bottomHeaderColor);
+    padding: .5rem;
+    border: none;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.projects .projects-box .box-pjct .text-project a:hover {
+    background-color: var(--bgButtonHover);
     color: var(--bottomHeaderColor);
 }
 
@@ -601,6 +679,37 @@ header {
     .skills .skills-box .list-skills .my-skills i {
         font-size: 1.5rem;
     }
+
+    .projects {
+        gap: 0;
+    }
+
+    .projects .projects-title {
+        font-size: 2rem;
+    }
+
+    .projects .projects-box {
+        font-size: .8rem;
+    }
+
+    .projects .projects-box .box-pjct {
+        flex-direction: column;
+        gap: 1.2rem;
+    }
+
+    .projects .projects-box .box-pjct .img-project {
+        width: 120px;
+        height: 120px;
+    }
+
+    .projects .projects-box .box-pjct .text-project p {
+        margin-top: .5rem;
+        margin-bottom: 1rem;
+    }
+
+    .projects .projects-box .box-pjct .text-project a {
+        font-size: .6rem;
+    }
 }
 
 /* Responsividade: Tablet Médio */
@@ -769,6 +878,37 @@ header {
     .skills .skills-box .list-skills .my-skills i {
         font-size: 2.1rem;
     }
+
+    .projects {
+        gap: 1.2rem;
+    }
+
+    .projects .projects-title {
+        font-size: 3.5rem;
+    }
+
+    .projects .projects-box {
+        font-size: 1.2rem;
+    }
+
+    .projects .projects-box .box-pjct {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .projects .projects-box .box-pjct .img-project {
+        width: 150px;
+        height: 150px;
+    }
+
+    .projects .projects-box .box-pjct .text-project p {
+        margin-top: .8rem;
+        margin-bottom: 1.4rem;
+    }
+
+    .projects .projects-box .box-pjct .text-project a {
+        font-size: 1.1rem;
+    }
 }
 
 /* Responsividade: Tablet Grande */
@@ -859,5 +999,23 @@ header {
 
     .skills .skills-box .list-skills {
         gap: 10px;
+    }
+
+    .projects {
+        gap: 1.2rem;
+    }
+
+    .projects .projects-box .box-pjct {
+        gap: 2rem;
+    }
+
+    .projects .projects-box .box-pjct .img-project {
+        width: 180px;
+        height: 180px;
+    }
+
+    .projects .projects-box .box-pjct .text-project p {
+        margin-top: .8rem;
+        margin-bottom: 1.4rem;
     }
 }
