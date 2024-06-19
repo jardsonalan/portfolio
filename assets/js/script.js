@@ -60,3 +60,19 @@ function setColorPage() {
         }
     }
 }
+
+const touchMenu = () => {
+    let menuMobile = document.querySelector('.menu-mobile');
+    let iconMode = document.querySelector('.icon');
+    let headerBar = document.querySelector('header.light-theme');
+
+    if (menuMobile.classList.contains('open-menu') == true) {
+        menuMobile.classList.remove('open-menu');
+
+        if (headerBar.classList.contains('dark-theme') == true) {
+            iconMode.src = 'assets/img/icons-menu/menu-burger-dark-mode.png';
+        } else {
+            iconMode.src = 'assets/img/icons-menu/menu-burger.png';
+        }
+    }
+}
