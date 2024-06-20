@@ -1,3 +1,5 @@
+'use strict';
+
 function menuShow() {
     let menuMobile = document.querySelector('.menu-mobile');
     let iconMode = document.querySelector('.icon');
