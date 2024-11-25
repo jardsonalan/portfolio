@@ -22,6 +22,7 @@ provide('isDrawer', isDrawer)
       </VLayout>
     </VCard>
     <VBtn class="d-sx-inline d-md-none d-lg-none position-absolute right-0 ma-2" style="width: 30px; height: 30px;" @click.stop="isDrawer = !isDrawer" icon="mdi-menu"></VBtn>
+    <RouterView />
   </VApp>
 </template>
 
