@@ -1,5 +1,5 @@
 <script setup lang="ts">
-
+import { routesPage } from '@/router/routesPage';
 </script>
 
 <template>
@@ -10,18 +10,15 @@
   >
     <VList>
       <VListItem
-        prepend-avatar="/public/perfil.jpeg"
+        prepend-avatar="/perfil.jpeg"
         title="Jardson Alan"
       ></VListItem>
     </VList>
 
     <VDivider></VDivider>
 
-    <VList density="compact" nav>
-      <VListItem prepend-icon="mdi-home" title="Home" value="home"></VListItem>
-      <VListItem prepend-icon="mdi-account" title="About" value="about"></VListItem>
-      <VListItem prepend-icon="mdi-list-box" title="Skills" value="skills"></VListItem>
-      <VListItem prepend-icon="mdi-application-brackets" title="Projects" value="projects"></VListItem>
+    <VList v-for="route in routesPage" :key="route.id" density="compact" nav>
+      <VListItem :to="route.path" :prepend-icon="route.icon" :title="route.nome" :value="route.value"></VListItem>
     </VList>
   </VNavigationDrawer>
 </template>
