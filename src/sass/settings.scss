@@ -1,3 +1,3 @@
-$font-h1: 'Montserrat', Arial, Helvetica, sans-serif;
-
-$span-color: #2196F3;
+@mixin spanColor {
+    color: #2196F3;
+}
