@@ -1,3 +1,33 @@
-@mixin spanColor {
-    color: #2196F3;
+$span-color: #2196F3;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-VariableFont_wght.ttf');
+}
+
+.fontFamily {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+}
+
+.span-color {
+    color: $span-color;
+}
+
+li {
+    list-style: none;
+}
+
+.v-card--reveal {
+    align-items: center;
+    bottom: 0;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
 }

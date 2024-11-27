@@ -11,7 +11,7 @@ const links = [
 <template>
   <VContainer class="d-flex d-md-none d-lg-none align-center h-screen">
     <VCard class="mx-auto pa-3" width="300">
-      <VCardTitle class="mb-2 text-center text-h4 font-weight-bold">About <span :id="about.spanColor">me</span></VCardTitle>
+      <VCardTitle class="mb-2 text-center text-h4 font-weight-bold">About <span class="span-color">me</span></VCardTitle>
       <VImg
         class="rounded-circle mx-auto"
         src="/perfil.jpeg"
@@ -29,11 +29,15 @@ const links = [
           v-for="link in links"
           :key="link.id"
         >
-          <VBtn
-            :icon="link.icon"
-            :href="link.href"
-            :target="link.target"
-          ></VBtn>
+          <VHover v-slot="{ isHovering, props }">
+            <VBtn
+              v-bind="props"
+              :color="isHovering ? 'blue' : undefined"
+              :icon="link.icon"
+              :href="link.href"
+              :target="link.target"
+            ></VBtn>
+          </VHover>
         </VCol>
       </VRow>
     </VCard>
@@ -42,7 +46,7 @@ const links = [
   <VContainer class="d-none d-md-flex d-lg-flex align-center h-screen">
     <VCard class="d-flex mx-auto pa-3" width="800">
       <div>
-        <VCardTitle class="mb-2 text-center text-h4 font-weight-bold">About <span :id="about.spanColor">me</span></VCardTitle>
+        <VCardTitle class="mb-2 text-center text-h4 font-weight-bold">About <span class="span-color">me</span></VCardTitle>
         <VImg
           class="rounded-circle mx-auto"
           src="/perfil.jpeg"
@@ -63,14 +67,18 @@ const links = [
           v-for="link in links"
           :key="link.id"
         >
-          <VBtn
-            width="500"
-            :prepend-icon="link.icon"
-            :href="link.href"
-            :target="link.target"
-          >
-            {{ link.nome }}
-          </VBtn>
+          <VHover v-slot="{ isHovering, props }">
+            <VBtn
+              v-bind="props"
+              :color="isHovering ? 'blue' : undefined"
+              width="500"
+              :prepend-icon="link.icon"
+              :href="link.href"
+              :target="link.target"
+            >
+              {{ link.nome }}
+            </VBtn>
+          </VHover>
         </VCol>
       </VRow>
     </VCard>
@@ -78,13 +86,4 @@ const links = [
 </template>
 
 <style lang="scss" module="about">
-@use "../sass/settings.scss" as settings;
-
-#spanColor {
-  @include settings.spanColor;
-}
-
-li {
-  list-style: none;
-}
 </style>
