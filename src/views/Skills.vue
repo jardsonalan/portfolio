@@ -11,7 +11,7 @@ const languages = [
 </script>
 
 <template>
-  <VContainer class="h-screen">
+  <VContainer class="h-screen overflow-y-auto">
     <h1 class="text-center">My <span class="span-color">Skills</span></h1>
     <VRow class="mt-4">
       <VCol cols="6" sm="6" md="4" lg="3" v-for="skill in languages" :key="skill.id">
