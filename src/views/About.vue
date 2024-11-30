@@ -29,15 +29,11 @@ const links = [
           v-for="link in links"
           :key="link.id"
         >
-          <VHover v-slot="{ isHovering, props }">
-            <VBtn
-              v-bind="props"
-              :color="isHovering ? 'blue' : undefined"
-              :icon="link.icon"
-              :href="link.href"
-              :target="link.target"
-            ></VBtn>
-          </VHover>
+          <VBtn
+            :icon="link.icon"
+            :href="link.href"
+            :target="link.target"
+          ></VBtn>
         </VCol>
       </VRow>
     </VCard>
@@ -67,18 +63,14 @@ const links = [
           v-for="link in links"
           :key="link.id"
         >
-          <VHover v-slot="{ isHovering, props }">
-            <VBtn
-              v-bind="props"
-              :color="isHovering ? 'blue' : undefined"
-              width="500"
-              :prepend-icon="link.icon"
-              :href="link.href"
-              :target="link.target"
-            >
-              {{ link.nome }}
-            </VBtn>
-          </VHover>
+          <VBtn
+            width="500"
+            :prepend-icon="link.icon"
+            :href="link.href"
+            :target="link.target"
+          >
+            {{ link.nome }}
+          </VBtn>
         </VCol>
       </VRow>
     </VCard>

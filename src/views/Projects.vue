@@ -3,7 +3,7 @@
 import { ref, computed } from 'vue';
 
 const tab = ref('all')
-const show = ref(false)
+const show = ref<number|null>(null)
 
 const project = [
   { id: 1, value: 'app', image: '/app_motorcycle.png', nome: 'MotoApp', link: 'https://github.com/jardsonalan/App_Motorcycle' },
@@ -11,10 +11,15 @@ const project = [
 
 const filteredProjects = computed(() => {
   if (tab.value === 'all') {
-    return project;
+    return project
   }
-  return project.filter(p => p.value === tab.value);
-});
+  return project.filter(p => p.value === tab.value)
+})
+
+const toggleCard = (id:number) => {
+  show.value = show.value === id ? null : id
+}
+
 </script>
 
 <template>
@@ -50,15 +55,20 @@ const filteredProjects = computed(() => {
             <VSpacer></VSpacer>
             <VCardActions>
               <VBtn
-                :icon="show ? 'mdi-chevron-up' : 'mdi-chevron-down'"
-                @click="show = !show"
+                :icon="show === p.id ? 'mdi-chevron-up' : 'mdi-chevron-down'"
+                @click="toggleCard(p.id)"
               ></VBtn>
             </VCardActions>
           </div>
           <VExpandTransition>
-            <div v-show="show">
+            <div v-show="show === p.id">
               <VDivider></VDivider>
-              <VCardText class="text-justify">O MotoBuscApp foi um aplicativo desenvolvido como projeto de Trabalho de Conclusão de Curso (TCC), do curso Técnico em Informática do Instituto Federal do Rio Grande do Norte (IFRN). O objetivo principal do desenvolvimento do aplicativo foi facilitar a solicitação de serviços de mototaxistas para turistas e moradores da cidade de Currais Novos, RN.</VCardText>
+              <VCardText class="text-justify">
+                O MotoBuscApp foi um aplicativo desenvolvido como projeto de Trabalho de Conclusão de Curso (TCC), do curso Técnico em Informática do Instituto Federal do Rio Grande do Norte (IFRN). O objetivo principal do desenvolvimento do aplicativo foi facilitar a solicitação de serviços de mototaxistas para turistas e moradores da cidade de Currais Novos, RN.
+              </VCardText>
+              <VCardText class="text-justify">
+                Desenvolvido por: Jardson Alan e Ian Galvão
+              </VCardText>
               <VCardActions>
                 <VBtn variant="tonal" :href="p.link" target="_blank">Ver Projeto</VBtn>
               </VCardActions>
