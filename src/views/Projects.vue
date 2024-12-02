@@ -6,7 +6,7 @@ const tab = ref('all')
 const show = ref<number|null>(null)
 
 const project = [
-  { id: 1, value: 'app', image: '/app_motorcycle.png', nome: 'MotoApp', link: 'https://github.com/jardsonalan/App_Motorcycle' },
+  { id: 1, value: 'app', image: '/app_motorcycle.png', nome: 'MotoBuscApp', link: 'https://github.com/jardsonalan/App_Motorcycle' },
 ]
 
 const filteredProjects = computed(() => {
@@ -30,7 +30,7 @@ const toggleCard = (id:number) => {
       color="blue"
     >
       <VTab value="all">All</VTab>
-      <VTab value="app">App</VTab>
+      <VTab value="app">Apps</VTab>
       <VTab value="web">Web</VTab>
     </VTabs>
 
@@ -44,12 +44,11 @@ const toggleCard = (id:number) => {
       >
         <VCard
           class="mt-4"
-          theme=dark
         >
-          <VImg height="200" class="border-md" :src="p.image" cover></VImg>
+          <VImg height="200" :src="p.image" cover></VImg>
           <div class="d-flex">
             <div>
-              <VCardTitle>{{ p.nome }}</VCardTitle>
+              <VCardTitle class="font-weight-bold">{{ p.nome }}</VCardTitle>
               <VCardSubtitle class="mb-2">Aplicativo Mobile</VCardSubtitle>
             </div>
             <VSpacer></VSpacer>

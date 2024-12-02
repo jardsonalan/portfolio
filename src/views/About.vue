@@ -1,80 +1,63 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <script lang="ts" setup>
-const links = [
-  { id: 1, nome: 'Linkedin', icon: 'mdi-linkedin', href: 'https://www.linkedin.com/in/jardson-alan/', target: '_blank' },
-  { id: 2, nome: 'GitHub', icon: 'mdi-github', href: 'https://github.com/jardsonalan', target: '_blank' },
-  { id: 3, nome: 'YouTube', icon: 'mdi-youtube', href: 'https://www.youtube.com/@JardsonAlan', target: '_blank' },
-  { id: 4, nome: 'Instagram', icon: 'mdi-instagram', href: 'https://www.instagram.com/jardson.alan/', target: '_blank' },
+const cursos = [
+  { id: 1, nome: 'Certificação da Microsoft', orgao: 'Fundação Bradesco' },
+  { id: 2, nome: 'JavaScript', orgao: 'IFRS - Instituto Federal do Rio Grande do Sul' },
+  { id: 3, nome: 'HTML5 e CSS3: Módulo 1 ao 3', orgao: 'Curso em Vídeo' },
+  { id: 4, nome: 'JavaScript', orgao: 'Curso em Vídeo' },
+  { id: 2, nome: 'Python 3 - Mundo 1', orgao: 'Curso em Vídeo' },
 ]
 </script>
 
 <template>
-  <VContainer class="d-flex d-md-none d-lg-none align-center h-screen">
-    <VCard class="mx-auto pa-3" width="300">
-      <VCardTitle class="mb-2 text-center text-h4 font-weight-bold">About <span class="span-color">me</span></VCardTitle>
+  <div class="d-flex flex-column py-4 align-center h-screen overflow-y-auto">
+    <h1>About <span class="span-color">me</span></h1>
+    <div>
       <VImg
-        class="rounded-circle mx-auto"
+        class="rounded-circle mt-3"
         src="/perfil.jpeg"
         width="120"
       ></VImg>
-      <VCardText>
-        <ul class="mt-4 text-center">
-          <li class="mb-2">Graduated in IT Technician</li>
-          <li class="mb-2">Studying Internet Systems</li>
-          <li class="mb-2">Basic to Intermediate English</li>
-        </ul>
-      </VCardText>
-      <VRow class="d-flex mt-2">
-        <VCol
-          v-for="link in links"
-          :key="link.id"
-        >
-          <VBtn
-            :icon="link.icon"
-            :href="link.href"
-            :target="link.target"
-          ></VBtn>
+    </div>
+    <h2 class="text-h6 mt-5 font-weight-bold">Formação Acadêmica</h2>
+    <hr style="width: 100px;" color="#2196F3">
+    <div style="width: 90%;" class="mt-4">
+      <VRow class="my-3">
+        <VCol cols="12" md="6" lg="6">
+          <VCard flat class="border-s-lg" border="primary">
+            <VIcon icon="mdi-certificate" class="ml-4"></VIcon>
+            <VCardTitle class="text-h6 font-weight-bold">Técnico em Informática</VCardTitle>
+            <VCardSubtitle class="text-subtitle-2 text-wrap">IFRN - Instituto Federal do Rio Grande do Norte</VCardSubtitle>
+            <VCardSubtitle class="text-subtitle-2">2020-2024</VCardSubtitle>
+            <VCardText class="text-justify">Programação, Desenvolvimento de Projeto, Desenvolvimento de Banco de Dados, Manutenção de Computadores</VCardText>
+          </VCard>
         </VCol>
-      </VRow>
-    </VCard>
-  </VContainer>
 
-  <VContainer class="d-none d-md-flex d-lg-flex align-center h-screen">
-    <VCard class="d-flex mx-auto pa-3" width="800">
-      <div>
-        <VCardTitle class="mb-2 text-center text-h4 font-weight-bold">About <span class="span-color">me</span></VCardTitle>
-        <VImg
-          class="rounded-circle mx-auto"
-          src="/perfil.jpeg"
-          width="150"
-        ></VImg>
-        <VCardText>
-          <ul class="mt-4 text-center">
-            <li class="mb-2">Graduated in IT Technician</li>
-            <li class="mb-2">Studying Internet Systems</li>
-            <li class="mb-2">Basic to Intermediate English</li>
-          </ul>
-        </VCardText>
-      </div>
-      <VDivider vertical></VDivider>
-      <VRow class="d-flex flex-column">
-        <VCol
-          class="d-flex flex-column justify-center align-center"
-          v-for="link in links"
-          :key="link.id"
-        >
-          <VBtn
-            width="500"
-            :prepend-icon="link.icon"
-            :href="link.href"
-            :target="link.target"
-          >
-            {{ link.nome }}
-          </VBtn>
+        <VCol>
+          <VCard flat class="border-s-lg" border="primary">
+            <VIcon icon="mdi-account-school" class="ml-4"></VIcon>
+            <VCardTitle class="text-h6 font-weight-bold text-wrap">Tecnologia de Sistemas para Internet</VCardTitle>
+            <VCardSubtitle class="text-subtitle-2 text-wrap">IFRN - Instituto Federal do Rio Grande do Norte</VCardSubtitle>
+            <VCardSubtitle class="text-subtitle-2">Atual</VCardSubtitle>
+            <VCardText class="text-justify">Programação, Desenvolvimento de projeto, Estrutura de aplicações, Desenvolvimento de Banco de Dados</VCardText>
+          </VCard>
         </VCol>
       </VRow>
-    </VCard>
-  </VContainer>
+    </div>
+    <h2 class="text-h6 mt-5 font-weight-bold">Cursos</h2>
+    <hr style="width: 50px;" color="#2196F3">
+    <div style="width: 90%;" class="mt-4">
+      <VRow class="my-3">
+        <VCol cols="12" md="6" lg="6" v-for="curso in cursos" :key="curso.id">
+          <VCard flat class="border-s-lg" border="primary">
+            <VIcon icon="mdi-certificate" class="ml-4"></VIcon>
+            <VCardTitle class="text-h6 font-weight-bold text-wrap">{{ curso.nome }}</VCardTitle>
+            <VCardSubtitle class="text-subtitle-2 text-wrap">{{ curso.orgao }}</VCardSubtitle>
+          </VCard>
+        </VCol>
+      </VRow>
+    </div>
+  </div>
 </template>
 
 <style lang="scss" module="about">

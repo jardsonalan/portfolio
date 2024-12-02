@@ -4,7 +4,6 @@ import { routesPage } from '@/router/routesPage';
 
 <template>
   <VNavigationDrawer
-    class="bg-grey-lighten-3"
     expand-on-hover
     rail
   >
