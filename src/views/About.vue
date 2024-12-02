@@ -26,7 +26,7 @@ const cursos = [
         <VCol cols="12" md="6" lg="6">
           <VCard flat class="border-s-lg" border="primary">
             <VIcon icon="mdi-certificate" class="ml-4"></VIcon>
-            <VCardTitle class="text-h6 font-weight-bold">Técnico em Informática</VCardTitle>
+            <VCardTitle class="text-h6 font-weight-bold text-wrap">Técnico em Informática</VCardTitle>
             <VCardSubtitle class="text-subtitle-2 text-wrap">IFRN - Instituto Federal do Rio Grande do Norte</VCardSubtitle>
             <VCardSubtitle class="text-subtitle-2">2020-2024</VCardSubtitle>
             <VCardText class="text-justify">Programação, Desenvolvimento de Projeto, Desenvolvimento de Banco de Dados, Manutenção de Computadores</VCardText>
@@ -49,11 +49,15 @@ const cursos = [
     <div style="width: 90%;" class="mt-4">
       <VRow class="my-3">
         <VCol cols="12" md="6" lg="6" v-for="curso in cursos" :key="curso.id">
-          <VCard flat class="border-s-lg" border="primary">
-            <VIcon icon="mdi-certificate" class="ml-4"></VIcon>
-            <VCardTitle class="text-h6 font-weight-bold text-wrap">{{ curso.nome }}</VCardTitle>
-            <VCardSubtitle class="text-subtitle-2 text-wrap">{{ curso.orgao }}</VCardSubtitle>
-          </VCard>
+          <VHover
+            v-slot="{ isHovering, props }"
+          >
+            <VCard v-bind="props" :elevation="isHovering ? 6 : 1" class="border-s-lg py-3" border="primary">
+              <VIcon icon="mdi-certificate" class="ml-4"></VIcon>
+              <VCardTitle class="text-h6 font-weight-bold text-wrap">{{ curso.nome }}</VCardTitle>
+              <VCardSubtitle class="text-subtitle-2 text-wrap">{{ curso.orgao }}</VCardSubtitle>
+            </VCard>
+          </VHover>
         </VCol>
       </VRow>
     </div>

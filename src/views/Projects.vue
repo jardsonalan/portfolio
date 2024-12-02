@@ -23,7 +23,7 @@ const toggleCard = (id:number) => {
 </script>
 
 <template>
-  <VContainer class="h-screen overflow-y-auto">
+  <div class="h-screen overflow-y-auto pa-4">
     <VTabs
       v-model="tab"
       align-tabs="center"
@@ -77,7 +77,7 @@ const toggleCard = (id:number) => {
       </VCol>
     </VRow>
 
-  </VContainer>
+  </div>
 </template>
 
 <style lang="scss" module="projects">

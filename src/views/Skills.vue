@@ -11,14 +11,15 @@ const languages = [
 </script>
 
 <template>
-  <VContainer class="h-screen overflow-y-auto">
+  <div class="h-screen overflow-y-auto pa-4">
     <h1 class="text-center">My <span class="span-color">Skills</span></h1>
     <VRow class="my-4">
       <VCol cols="6" sm="6" md="4" lg="3" v-for="skill in languages" :key="skill.id">
-        <VHover v-slot="{ isHovering, props }">
+        <VHover v-slot="{ isHovering, props }" open-delay="200">
           <VCard
             v-bind="props"
-            class="d-flex flex-column justify-center align-center pa-4" height="120">
+            class="d-flex flex-column justify-center align-center pa-4" height="120"
+          >
             <VExpandTransition>
               <div
                 v-if="isHovering"
@@ -33,7 +34,7 @@ const languages = [
         </VHover>
       </VCol>
     </VRow>
-  </VContainer>
+  </div>
 </template>
 
 <style lang="scss" module="skills">
