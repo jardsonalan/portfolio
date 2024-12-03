@@ -20,7 +20,7 @@ provide('isDrawer', isDrawer)
         </VMain>
       </VLayout>
     </VCard>
-    <VBtn class="d-inline d-lg-none position-fixed right-0 ma-2" style="width: 35px; height: 35px;" @click.stop="isDrawer = !isDrawer" icon="mdi-menu"></VBtn>
+    <VBtn class="d-inline d-lg-none position-fixed right-0 ma-2" style="width: 35px; height: 35px;" @click.stop="isDrawer = !isDrawer" :icon="isDrawer ? 'mdi-close' : 'mdi-menu'"></VBtn>
   </VApp>
 </template>
 
