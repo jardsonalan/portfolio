@@ -6,7 +6,7 @@ const tab = ref('all')
 const show = ref<number|null>(null)
 
 const project = [
-  { id: 1, value: 'app', image: '/app_motorcycle.png', nome: 'MotoBuscApp', link: 'https://github.com/jardsonalan/App_Motorcycle' },
+  { id: 1, value: 'app', image: 'app_motorcycle.png', nome: 'MotoBuscApp', link: 'https://github.com/jardsonalan/App_Motorcycle' },
 ]
 
 const filteredProjects = computed(() => {

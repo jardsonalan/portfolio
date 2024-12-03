@@ -8,7 +8,7 @@ import { routesPage } from '@/router/routesPage';
   >
     <VList>
       <VListItem
-        prepend-avatar="/perfil.jpeg"
+        prepend-avatar="perfil.jpeg"
         title="Jardson Alan"
       ></VListItem>
     </VList>

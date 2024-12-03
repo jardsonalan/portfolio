@@ -15,7 +15,7 @@ const cursos = [
     <div>
       <VImg
         class="rounded-circle mt-3"
-        src="/perfil.jpeg"
+        src="perfil.jpeg"
         width="120"
       ></VImg>
     </div>

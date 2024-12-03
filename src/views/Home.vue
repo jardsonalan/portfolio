@@ -9,7 +9,7 @@ const links = [
 </script>
 
 <template>
-  <VParallax src="/background-light.jpg">
+  <VParallax src="background-light.jpg">
     <div class="d-flex flex-column justify-center align-center h-screen">
       <div class="mb-4">
         <span class="text-subtitle-2 text-md-subtitle-1 text-lg-subtitle-1 font-weight-bold mr-4 px-4 py-1 rounded-lg bg-blue">Hello</span>
