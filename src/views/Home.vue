@@ -33,6 +33,17 @@ const links = [
           </VCol>
         </VRow>
       </div>
+      <VBtn
+        prepend-icon="mdi-download"
+        variant="outlined"
+        rounded="xl"
+        class="mt-4 text-subtitle-2 text-lg-subtitle-1"
+        color="grey-darken-4"
+        href="curriculo.pdf"
+        download
+      >
+        Download CV
+      </VBtn>
     </div>
   </VParallax>
 </template>
