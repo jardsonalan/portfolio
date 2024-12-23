@@ -12,7 +12,7 @@ const languages = [
 
 <template>
   <div class="h-screen overflow-y-auto pa-4">
-    <h1 class="text-center">My <span class="span-color">Skills</span></h1>
+    <h1 class="text-center">Minhas <span class="span-color">Skills</span></h1>
     <VRow class="my-4">
       <VCol cols="6" sm="6" md="4" lg="3" v-for="skill in languages" :key="skill.id">
         <VHover v-slot="{ isHovering, props }" open-delay="200">

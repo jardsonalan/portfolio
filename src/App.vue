@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import SmallHeaderBar from './components/SmallHeaderBar.vue';
-import LargeHeaderBar from './components/LargeHeaderBar.vue';
+import SmallHeaderBar from './components/Header/SmallHeaderBar.vue';
+import LargeHeaderBar from './components/Header/LargeHeaderBar.vue';
 
 import { provide, ref } from 'vue';
 

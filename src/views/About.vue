@@ -11,7 +11,7 @@ const cursos = [
 
 <template>
   <div class="d-flex flex-column py-4 align-center h-screen overflow-y-auto">
-    <h1>About <span class="span-color">me</span></h1>
+    <h1>Sobre <span class="span-color">mim</span></h1>
     <div>
       <VImg
         class="rounded-circle mt-3"
