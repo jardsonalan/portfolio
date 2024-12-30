@@ -7,6 +7,8 @@ const languages = [
   { id: 4, nome: 'JavaScript', icon: 'mdi-language-javascript', size: 'x-large' },
   { id: 5, nome: 'TypeScript', icon: 'mdi-language-typescript', size: 'x-large' },
   { id: 6, nome: 'Python', icon: 'mdi-language-python', size: 'x-large' },
+  { id: 7, nome: 'Git', icon: 'mdi-git', size: 'x-large' },
+  { id: 8, nome: 'GitHub', icon: 'mdi-github', size: 'x-large' },
 ]
 </script>
 
