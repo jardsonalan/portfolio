@@ -1,14 +1,17 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <script lang="ts" setup>
 const languages = [
-  { id: 1, nome: 'HTML5', icon: 'mdi-language-html5', size: 'x-large' },
-  { id: 2, nome: 'CSS3', icon: 'mdi-language-css3', size: 'x-large' },
-  { id: 3, nome: 'Vue', icon: 'mdi-vuejs', size: 'x-large' },
+  { id: 1, nome: 'Vue.js', icon: 'mdi-vuejs', size: 'x-large' },
+  { id: 2, nome: 'Vuetify', icon: 'mdi-vuetify', size: 'x-large' },
+  { id: 3, nome: 'TypeScript', icon: 'mdi-language-typescript', size: 'x-large' },
   { id: 4, nome: 'JavaScript', icon: 'mdi-language-javascript', size: 'x-large' },
-  { id: 5, nome: 'TypeScript', icon: 'mdi-language-typescript', size: 'x-large' },
-  { id: 6, nome: 'Python', icon: 'mdi-language-python', size: 'x-large' },
-  { id: 7, nome: 'Git', icon: 'mdi-git', size: 'x-large' },
-  { id: 8, nome: 'GitHub', icon: 'mdi-github', size: 'x-large' },
+  { id: 5, nome: 'Python', icon: 'mdi-language-python', size: 'x-large' },
+  { id: 6, nome: 'HTML5', icon: 'mdi-language-html5', size: 'x-large' },
+  { id: 7, nome: 'CSS3', icon: 'mdi-language-css3', size: 'x-large' },
+  { id: 8, nome: 'Sass', icon: 'mdi-sass', size: 'x-large' },
+  { id: 9, nome: 'Git', icon: 'mdi-git', size: 'x-large' },
+  { id: 10, nome: 'GitHub', icon: 'mdi-github', size: 'x-large' },
+  { id: 11, nome: 'Markdown', icon: 'mdi-language-markdown', size: 'x-large' },
 ]
 </script>
 

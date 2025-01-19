@@ -6,6 +6,7 @@ const cursos = [
   { id: 3, nome: 'HTML5 e CSS3: Módulo 1 ao 3', orgao: 'Curso em Vídeo' },
   { id: 4, nome: 'JavaScript', orgao: 'Curso em Vídeo' },
   { id: 5, nome: 'Python 3 - Mundo 1 e 2', orgao: 'Curso em Vídeo' },
+  { id: 6, nome: 'Git e GitHub', orgao: 'Curso em Vídeo' },
 ]
 </script>
 

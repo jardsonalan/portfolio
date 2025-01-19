@@ -3,7 +3,7 @@
 const links = [
   { id: 1, nome: 'Linkedin', icon: 'mdi-linkedin', href: 'https://www.linkedin.com/in/jardson-alan/', target: '_blank' },
   { id: 2, nome: 'GitHub', icon: 'mdi-github', href: 'https://github.com/jardsonalan', target: '_blank' },
-  { id: 3, nome: 'YouTube', icon: 'mdi-youtube', href: 'https://www.youtube.com/@JardsonAlan', target: '_blank' },
+  { id: 3, nome: 'YouTube', icon: 'mdi-youtube', href: 'https://www.youtube.com/@jardsonalan', target: '_blank' },
   { id: 4, nome: 'Instagram', icon: 'mdi-instagram', href: 'https://www.instagram.com/jardson.alan/', target: '_blank' },
 ]
 </script>
