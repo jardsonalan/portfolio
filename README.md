@@ -1,39 +1,44 @@
-# portfolio
+# 🖥️ Meu Portfólio
 
-This template should help get you started developing with Vue 3 in Vite.
+Este é o repositório do meu portfólio profissional, desenvolvido com **Vue.js**, **TypeScript** e **Vuetify**. Ele foi criado para apresentar meus projetos, habilidades e experiências, com foco em acessibilidade, performance e um design moderno.
 
-## Recommended IDE Setup
+---
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+## 🚀 Tecnologias Utilizadas
 
-## Type Support for `.vue` Imports in TS
+- **Vue.js**: Framework JavaScript progressivo para construção de interfaces dinâmicas.
+- **TypeScript**: Superconjunto de JavaScript que adiciona tipagem estática ao projeto.
+- **Vuetify**: Biblioteca de componentes UI baseada no Material Design.
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
+---
 
-## Customize configuration
+## 📋 Funcionalidades
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+- **Apresentação de Projetos**: Seção dedicada a exibir os projetos mais relevantes.
+- **Sobre Mim**: Informações sobre minha trajetória profissional e habilidades técnicas.
+- **Responsividade**: Layout adaptado para diferentes tamanhos de tela.
 
-## Project Setup
+---
 
-```sh
-npm install
-```
+## 🎨 Design e Estilo
 
-### Compile and Hot-Reload for Development
+- **Material Design**: Utilizado para garantir um layout visualmente agradável e consistente.
+- **Customização**: Componentes do Vuetify foram estilizados para refletir a identidade do portfólio.
 
-```sh
-npm run dev
-```
+---
 
-### Type-Check, Compile and Minify for Production
+## 🌐 Deploy
 
-```sh
-npm run build
-```
+O portfólio foi publicado utilizando o GitHub Pages. Você pode acessá-lo no seguinte link:
 
-### Lint with [ESLint](https://eslint.org/)
+[Meu Portfólio Online](https://jardsonalan.github.io/portfolio/)
 
-```sh
-npm run lint
-```
+---
+
+## 🤝 Contribuição
+Se você tiver sugestões ou melhorias, sinta-se à vontade para abrir uma issue ou enviar um pull request!
+
+---
+
+## 📬 Contato
+Entre em contato comigo por e-mail ou através das minhas redes sociais (links disponíveis no portfólio).
