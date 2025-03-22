@@ -16,7 +16,7 @@ const links = [
         <span class="text-subtitle-2 text-md-subtitle-1 text-lg-subtitle-1 font-weight-medium">Eu sou</span>
       </div>
       <h1 class="text-h4 text-md-h1 text-lg-h1 mb-4 font-weight-bold">Jardson Alan</h1>
-      <h4 class="text-center text-subtitle-2 text-md-subtitle-1 text-lg-subtitle-1 font-weight-bold">Desenvolvedor <span class="span-color">Front-end</span></h4>
+      <h4 class="text-center text-subtitle-1 text-md-subtitle-1 text-lg-h5 font-weight-bold">Desenvolvedor <span class="span-color">Web</span></h4>
       <div>
         <VRow class="d-flex mt-1">
           <VCol
