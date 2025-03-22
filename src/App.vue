@@ -4,7 +4,7 @@ import LargeHeaderBar from './components/Header/LargeHeaderBar.vue';
 
 import { provide, ref } from 'vue';
 
-const isDrawer = ref(null)
+const isDrawer = ref(false)
 
 provide('isDrawer', isDrawer)
 </script>
