@@ -11,12 +11,12 @@ const links = [
 <template>
   <VParallax src="background-light.jpg">
     <div class="d-flex flex-column justify-center align-center h-screen">
-      <div class="mb-4">
-        <span class="text-subtitle-2 text-md-subtitle-1 text-lg-subtitle-1 font-weight-bold mr-4 px-4 py-1 rounded-lg bg-blue">Olá</span>
-        <span class="text-subtitle-2 text-md-subtitle-1 text-lg-subtitle-1 font-weight-medium">Eu sou</span>
+      <div class="mb-4 text-subtitle-2 text-md-h6">
+        <span class="font-weight-bold mr-4 px-4 py-1 rounded-lg bg-blue">Olá</span>
+        <span class="font-weight-medium">Eu sou</span>
       </div>
       <h1 class="text-h4 text-md-h1 text-lg-h1 mb-4 font-weight-bold">Jardson Alan</h1>
-      <h4 class="text-center text-subtitle-1 text-md-subtitle-1 text-lg-h5 font-weight-bold">Desenvolvedor <span class="span-color">Web</span></h4>
+      <h4 class="text-center text-subtitle-1 text-lg-h5 font-weight-bold">Desenvolvedor de <span class="span-color">Software</span></h4>
       <div>
         <VRow class="d-flex mt-1">
           <VCol

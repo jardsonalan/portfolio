@@ -21,7 +21,7 @@ function sendEmail (evt: Event) {
 
   const isValid = verificarEmail(email.value)
 
-  if (name.value == '' || email.value == '' || message.value == '' || isValid == false) {
+  if (name.value === '' || email.value === '' || message.value === '' || isValid === false) {
     verificarEnvio.value = 'Erro'
     setTimeout(()=>{
       verificarEnvio.value = ''
