@@ -1,12 +1,14 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <script lang="ts" setup>
 const cursos = [
-  { id: 1, nome: 'Certificação da Microsoft', orgao: 'Fundação Bradesco' },
-  { id: 2, nome: 'JavaScript', orgao: 'IFRS - Instituto Federal do Rio Grande do Sul' },
-  { id: 3, nome: 'HTML5 e CSS3: Módulo 1 ao 3', orgao: 'Curso em Vídeo' },
-  { id: 4, nome: 'JavaScript', orgao: 'Curso em Vídeo' },
-  { id: 5, nome: 'Python 3 - Mundo 1 e 2', orgao: 'Curso em Vídeo' },
-  { id: 6, nome: 'Git e GitHub', orgao: 'Curso em Vídeo' },
+  { id: 1, nome: 'Python (Basic)', orgao: 'HackerRank' },
+  { id: 2, nome: 'Suzano - Python Developer', orgao: 'DIO' },
+  { id: 3, nome: 'Certificação da Microsoft', orgao: 'Fundação Bradesco' },
+  { id: 4, nome: 'JavaScript', orgao: 'IFRS - Instituto Federal do Rio Grande do Sul' },
+  { id: 5, nome: 'HTML5 e CSS3: Módulo 1 ao 3', orgao: 'Curso em Vídeo' },
+  { id: 6, nome: 'JavaScript', orgao: 'Curso em Vídeo' },
+  { id: 7, nome: 'Python 3 - Mundo 1 e 2', orgao: 'Curso em Vídeo' },
+  { id: 8, nome: 'Git e GitHub', orgao: 'Curso em Vídeo' },
 ]
 </script>
 
@@ -34,7 +36,7 @@ const cursos = [
           </VCard>
         </VCol>
 
-        <VCol>
+        <VCol cols="12" md="6" lg="6">
           <VCard flat class="border-s-lg" border="primary">
             <VIcon icon="mdi-account-school" class="ml-4"></VIcon>
             <VCardTitle class="text-h6 font-weight-bold text-wrap">Tecnologia de Sistemas para Internet</VCardTitle>
@@ -43,9 +45,19 @@ const cursos = [
             <VCardText class="text-justify">Programação, Desenvolvimento de projeto, Estrutura de aplicações, Desenvolvimento de Banco de Dados</VCardText>
           </VCard>
         </VCol>
+
+        <VCol cols="12" md="6" lg="6">
+          <VCard flat class="border-s-lg" border="primary">
+            <VIcon icon="mdi-certificate" class="ml-4"></VIcon>
+            <VCardTitle class="text-h6 font-weight-bold text-wrap">Formação Inicial e Continuada em Sistemas Embarcados</VCardTitle>
+            <VCardSubtitle class="text-subtitle-2 text-wrap">IFRN - Instituto Federal do Rio Grande do Norte</VCardSubtitle>
+            <VCardSubtitle class="text-subtitle-2">2024-2025</VCardSubtitle>
+            <VCardText class="text-justify">Programação em linguagem C, Desenvolvimento de projetos, Estrutura de aplicações IoT</VCardText>
+          </VCard>
+        </VCol>
       </VRow>
     </div>
-    <h2 class="text-h6 mt-5 font-weight-bold">Cursos</h2>
+    <h2 class="text-h6 mt-5 font-weight-bold">Certificações</h2>
     <hr style="width: 50px;" color="#2196F3">
     <div style="width: 90%;" class="mt-4">
       <VRow class="my-3">

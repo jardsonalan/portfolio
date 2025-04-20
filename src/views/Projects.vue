@@ -6,7 +6,9 @@ const tab = ref('all')
 const show = ref<number|null>(null)
 
 const project = [
-  { id: 1, value: 'app', image: 'app_motorcycle.png', nome: 'MotoBuscApp', link: 'https://github.com/jardsonalan/App_Motorcycle' },
+  { id: 1, value: 'app', image: 'app_motorcycle.png', tipo: 'Aplicação Mobile', nome: 'MotoBuscApp', link: 'https://github.com/jardsonalan/app-motorcycle', descricao: 'O MotoBuscApp foi um aplicativo desenvolvido como projeto de Trabalho de Conclusão de Curso (TCC), do curso Técnico em Informática do Instituto Federal do Rio Grande do Norte (IFRN). O objetivo principal do desenvolvimento do aplicativo foi facilitar a solicitação de serviços de mototaxistas para turistas e moradores da cidade de Currais Novos, RN.', desenvolvedor: 'Desenvolvido por: Jardson Alan e Ian Galvão' },
+  { id: 2, value: 'web', image: 'api-universidade.png', tipo: 'API', nome: 'API Universidade', link: 'https://github.com/jardsonalan/api-universidade', descricao: 'A API Universidade é uma aplicação pública, desenvolvida durante as aulas de Programação para Internet, com o objetivo de gerenciar ações relacionadas a uma universidade fictícia. A API permite gerenciar Alunos, Cursos, Disciplinas e também conta com um sistema de autenticação via token JWT.', desenvolvedor: 'Desenvolvido por: Jardson Alan' },
+  { id: 3, value: 'web', image: 'the-theft.png', tipo: 'Mini RPG', nome: 'The Theft', link: 'https://github.com/jardsonalan/the-theft', descricao: 'The Theft é um mini RPG desenvolvido para a disciplina de inglês. O objetivo é avançar pelos três níveis disponíveis, enfrentando desafios e obstáculos ao longo do caminho, para no final realizar um grande roubo no banco.', desenvolvedor: 'Desenvolvido por: Jardson Alan' },
 ]
 
 const filteredProjects = computed(() => {
@@ -49,7 +51,7 @@ const toggleCard = (id:number) => {
           <div class="d-flex">
             <div>
               <VCardTitle class="font-weight-bold">{{ p.nome }}</VCardTitle>
-              <VCardSubtitle class="mb-2">Aplicativo Mobile</VCardSubtitle>
+              <VCardSubtitle class="mb-2">{{ p.tipo }}</VCardSubtitle>
             </div>
             <VSpacer></VSpacer>
             <VCardActions>
@@ -63,10 +65,10 @@ const toggleCard = (id:number) => {
             <div v-show="show === p.id">
               <VDivider></VDivider>
               <VCardText class="text-justify">
-                O MotoBuscApp foi um aplicativo desenvolvido como projeto de Trabalho de Conclusão de Curso (TCC), do curso Técnico em Informática do Instituto Federal do Rio Grande do Norte (IFRN). O objetivo principal do desenvolvimento do aplicativo foi facilitar a solicitação de serviços de mototaxistas para turistas e moradores da cidade de Currais Novos, RN.
+                {{ p.descricao }}
               </VCardText>
               <VCardText class="text-justify">
-                Desenvolvido por: Jardson Alan e Ian Galvão
+                {{ p.desenvolvedor }}
               </VCardText>
               <VCardActions>
                 <VBtn variant="tonal" :href="p.link" target="_blank">Ver Projeto</VBtn>
